@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0px"
+        android:orientation="vertical"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="8dp"
+        app:cardPreventCornerOverlap="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_content_background"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/excerise_vactore"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/view_background"
+                    android:layout_width="80dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/a2_grad"
+                    android:backgroundTint="#C6E4F8"/>
+
+                <ImageView
+                    android:id="@+id/excerise_image"
+                    android:layout_width="80dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:padding="10dp"
+                    android:src="@mipmap/slider_image1" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/excerise_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:layout_toLeftOf="@+id/icon_right"
+                android:layout_toRightOf="@+id/excerise_vactore"
+                android:text="Settings"
+                android:singleLine="true"
+                android:textColor="@color/light_black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/icon_right"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/right" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
